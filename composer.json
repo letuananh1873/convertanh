@@ -35,5 +35,6 @@
         "test": "vendor\\bin\\codecept run --env local",
         "syntax": "vendor\\bin\\phpcs --standard=vendor/letuananh1873/congcu/assets/coding-standards/standards.xml --colors --encoding=utf-8 -sp src/",
         "syntax-fix": "vendor\\bin\\phpcbf --standard=vendor/letuananh1873/congcu/assets/coding-standards/standards.xml src/"
-    }
+    },
+    "minimum-stability": "dev"
 }
