@@ -82,6 +82,9 @@ class TextImage
     /** @var float */
     protected $watermarkTextOpacity = 0.0;
 
+    /** @var float */
+    protected $watermarkTextColor = '2829099';
+
     /** Strip text string */
     const STRIP_DOTS = '...';
 
@@ -226,6 +229,25 @@ class TextImage
     public function setWatermarkTextOpacity($opacity)
     {
         $this->watermarkTextOpacity = $opacity;
+
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getWatermarkTextColor()
+    {
+        return $this->watermarkTextColor;
+    }
+
+    /**
+     * @param float $opacity
+     * @return TextImage
+     */
+    public function setWatermarkTextColor($color)
+    {
+        $this->watermarkTextColor = $color;
 
         return $this;
     }

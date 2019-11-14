@@ -165,7 +165,7 @@ class TextImageRenderer
             $textImage->getFontSize(),
             $textImage->getWatermarkTextAngle(),
             abs($imageWidth - $textWidth)/2,
-            $offsetY,
+            $offsetY + $textHeight,
             $color,
             $textImage->getFontPath(),
             $textImage->getWatermarkText()
@@ -176,8 +176,8 @@ class TextImageRenderer
             $resource,
             $textImage->getFontSize(),
             $textImage->getWatermarkTextAngle(),
-            0,
-            $offsetY,
+            $textHeight,
+            $offsetY + $textHeight,
             $color,
             $textImage->getFontPath(),
             $textImage->getWatermarkText()
@@ -188,8 +188,8 @@ class TextImageRenderer
             $resource,
             $textImage->getFontSize(),
             $textImage->getWatermarkTextAngle(),
-            abs($imageWidth - $textWidth),
-            $offsetY,
+            abs($imageWidth - $textWidth) - ($textWidth * 3),
+            $offsetY + $textHeight,
             $color,
             $textImage->getFontPath(),
             $textImage->getWatermarkText()
