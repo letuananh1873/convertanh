@@ -17,7 +17,7 @@
     },
     "require": {
         "php": ">=5.4.0",
-        "letuananh1873/congcu": "^2.0"
+        "letuananh1873/congcu": "^1.0"
     },
     "require-dev": {
         "codeception/codeception": "2.1.*",
