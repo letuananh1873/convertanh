@@ -8,7 +8,7 @@ TextImage: A simple PHP library to convert text to images.
 Requirements
 ------------
 
-Library **rathouz/text-image** requires **PHP 5.4**.
+Library **letuananh1873/convertanh** requires **PHP 5.4**.
 For other requirements, please see
 [composer.json](https://github.com/minhchu/text-image/blob/master/composer.json)
 
@@ -16,11 +16,11 @@ For other requirements, please see
 Installation
 ------------
 
-The best way to install **rathouz/text-image** is using
+The best way to install **letuananh1873/convertanh** is using
 [Composer](http://getcomposer.org/):
 
 ```sh
-$ composer require rathouz/text-image
+$ composer require letuananh1873/convertanh
 ```
 
 
