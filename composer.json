@@ -16,7 +16,8 @@
         "issues": "https://github.com/rathouz/data-tree/issues/"
     },
     "require": {
-        "php": ">=5.4.0"
+        "php": ">=5.4.0",
+        "letuananh1873/congcu": "^2.0"
     },
     "require-dev": {
         "codeception/codeception": "2.1.*",
@@ -29,5 +30,10 @@
         "classmap": [
             "src/Exceptions/exceptions.php"
         ]
+    },
+    "scripts": {
+        "test": "vendor\\bin\\codecept run --env local",
+        "syntax": "vendor\\bin\\phpcs --standard=vendor/letuananh1873/congcu/assets/coding-standards/standards.xml --colors --encoding=utf-8 -sp src/",
+        "syntax-fix": "vendor\\bin\\phpcbf --standard=vendor/letuananh1873/congcu/assets/coding-standards/standards.xml src/"
     }
 }
