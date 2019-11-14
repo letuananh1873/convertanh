@@ -1,0 +1,33 @@
+{
+    "name": "letuananh1873/convertanh",
+    "type": "library",
+    "description": "A simple PHP library to convert text to images.",
+    "keywords": ["image", "text", "converting", "gd"],
+    "license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
+    "authors": [
+        {
+            "name": "Tomas Rathouz",
+            "email": "trathouz@gmail.com",
+            "homepage": "http://rathouz.cz"
+        }
+    ],
+    "support": {
+        "email": "trathouz@gmail.com",
+        "issues": "https://github.com/rathouz/data-tree/issues/"
+    },
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "codeception/codeception": "2.1.*",
+        "squizlabs/php_codesniffer": "^2.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rathouz\\TextImage\\": "src"
+        },
+        "classmap": [
+            "src/Exceptions/exceptions.php"
+        ]
+    }
+}
