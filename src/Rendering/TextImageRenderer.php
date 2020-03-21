@@ -116,7 +116,7 @@ class TextImageRenderer
             0,
             0,
             $watermarkWidth,
-            $watermarkHeight,
+            $watermarkHeight
         );
 
         return $resource;
